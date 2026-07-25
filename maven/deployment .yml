@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: maven-app
-        image: dhinu456/maven-app/maven-app:latest
+        image: dhinu456/maven-app:latest
         ports:
         - containerPort: 8080
