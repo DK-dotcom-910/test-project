@@ -2,20 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: maven-deployment
+  namespace: default
   labels:
-    app: maven
+    app: maven-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: maven
+      app: maven-app
   template:
     metadata:
       labels:
-        app: maven
+        app: maven-app
     spec:
       containers:
-      - name: maven
-        image: maven:latest
+      - name: maven-app
+        image: dhinu456/maven-app/maven-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
