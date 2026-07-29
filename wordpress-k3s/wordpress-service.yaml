@@ -8,6 +8,6 @@ spec:
   selector:
     app: wordpress
   ports:
-  - port: 80
-    targetPort: 80
-    nodePort: 30090
+    - port: 80
+      targetPort: 80
+      nodePort: 30080
