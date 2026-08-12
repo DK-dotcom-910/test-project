@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:latest
+          image: dhinu456/nginx-demo:latest
           ports:
             - containerPort: 80
